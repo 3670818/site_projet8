@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', 
+  base: '/site_projet8/',
+
   root: '.', // or wherever your index.html is
 });
 
