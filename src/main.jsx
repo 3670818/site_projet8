@@ -9,9 +9,22 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/site_projet8">
       <App />
     </BrowserRouter>
   </React.StrictMode>
 );
 
+;
+// import ReactDOM from "react-dom";
+
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <BrowserRouter basename="/site_projet8">
+//       <App />
+//     </BrowserRouter>
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );

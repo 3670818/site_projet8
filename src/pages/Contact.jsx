@@ -12,11 +12,11 @@ function Contact() {
     <div className="droit">   
     <div className="fin">
           <div className="icon-contact">
-      <i class="fa-solid fa-envelope"></i>
+      <i className="fa-solid fa-envelope"></i>
         <p > email: Ibrahimallae1@gmail.com</p>
       </div>
       <div className="icon-contact">
-        <i class="fa-solid fa-phone"></i>
+        <i className="fa-solid fa-phone"></i>
         <p> Téléphone: 06 51 78 25 43</p>
   
       </div>
