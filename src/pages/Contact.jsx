@@ -6,24 +6,28 @@ function Contact() {
   return (
     <div id="contact" >
     {/* <h1 className='titre'>Contact</h1> */}
-    <p className='titre'>Vous pouvez me contacter en remplissant le formulaire ci-dessous</p>
+    <p className='titre'>Vous pouvez me contacter </p>
       
-    <ContactForm />
-    <div className="droit">   
-    <div className="fin">
-          <div className="icon-contact">
-      <i className="fa-solid fa-envelope"></i>
-        <p > email: Ibrahimallae1@gmail.com</p>
+    {/* <ContactForm /> */}
+    <div className="block-contact">   
+      <div className="colonnecontact">
+        <div className="icon-contact">
+          <i className="fa-solid fa-envelope"></i>
+          <a href="mailto:ibrahimallae1@gmail.com">ibrahimallae1@gmail.com</a>
+
       </div>
       <div className="icon-contact">
         <i className="fa-solid fa-phone"></i>
-        <p> Téléphone: 06 51 78 25 43</p>
-  
+        <a href="tel:+33651782543">06 51 78 25 43</a>
+      </div>
+      <div className="icon-contact">
+        <i className="fa-brands fa-linkedin-in"></i>
+        <a href=" www.linkedin.com/in/allae-ibrahim-474a92248" target="_blank" rel="noopener noreferrer">
+        Mon linkedin</a>
       </div>
     </div>
-    </div>
-   
-    </div>
+  </div>
+</div>
   )
 }
 

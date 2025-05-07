@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client"; // Import createRoot
 import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
 import App from "./App";
 import './index.css'; // Assurez-vous d'importer votre fichier CSS si nécessaire
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const container = document.getElementById("root");
 const root = createRoot(container);

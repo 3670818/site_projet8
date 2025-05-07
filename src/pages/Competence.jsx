@@ -74,7 +74,7 @@ import React from 'react';
 import './competence_style.scss';
 import '../component/descriptionpanel_style.scss';
 import { DescriptionPanel } from '../component/DescriptionPanel';
-import cv from '../assets/CV.jpg';
+import cv from '../assets/cv.jpg'; // Importez l'image
 import MATLAB from '../assets/matlab1.png';
 import mongoDB from '../assets/db1.png';
 import competences from './competences.json'; // Chargement des données JSON
@@ -86,9 +86,9 @@ const imageMap = {
 
 const CVLink = () => {
   return (
-    <a href={cv} target="_blank" rel="noopener noreferrer">
+    <a className="telecharger" href={cv} target="_blank" rel="noopener noreferrer">
       <img src={cv} alt="CV" className="cv" />
-      <h3 className="telecharger">Télécharger CV</h3>
+      <h3 >Télécharger CV</h3>
     </a>
   );
 };
