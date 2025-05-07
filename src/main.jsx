@@ -13,7 +13,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <HashRouter basename="/site_projet8">
+    <HashRouter >
       <App />
     </HashRouter>
   </React.StrictMode>

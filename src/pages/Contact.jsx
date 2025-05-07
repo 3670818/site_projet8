@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactForm from "../component/ContactForm";
+// import ContactForm from "../component/ContactForm";
 import './contact_style.scss';
 
 function Contact() {
@@ -22,8 +22,8 @@ function Contact() {
       </div>
       <div className="icon-contact">
         <i className="fa-brands fa-linkedin-in"></i>
-        <a href=" www.linkedin.com/in/allae-ibrahim-474a92248" target="_blank" rel="noopener noreferrer">
-        Mon linkedin</a>
+        <a href="https://www.linkedin.com/in/allae-ibrahim-474a92248" target="_blank">Mon linkedin</a>
+
       </div>
     </div>
   </div>

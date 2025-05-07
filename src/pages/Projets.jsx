@@ -11,11 +11,13 @@ function Projets() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openPopup = (project) => {
+    console.log("Open Popup for project:", project); // Vérifie le projet sélectionné
     setSelectedProject(project);
     setShowPopup(true);
   };
 
   const closePopup = () => {
+    console.log("Closing Popup..."); // Vérifie si le pop-up est bien fermé
     setShowPopup(false);
     setSelectedProject(null);
   };
@@ -63,11 +65,13 @@ function Projets() {
     <div className="activités-a-marseille">
       <section className="acti">
         <h2 className="section-title2" id="activité">Mes Projets</h2>
-        <span className="sous-titre-projets"> Quelques exemples de réalisations effectuées durant la formation</span>
+        <span className="sous-titre-projets">Quelques exemples de réalisations effectuées durant la formation</span>
+        
         <div className="hebergements-cards2">
           {projects.map((project) => (
             <div key={project.id}>
-              <a href="#" onClick={() => openPopup(project)}>
+              {/* Lien modifié avec preventDefault pour éviter le rechargement de la page */}
+              <a href="#" onClick={(e) => { e.preventDefault(); openPopup(project); }}>
                 <article className="card2">
                   <img src={project.img} alt={project.alt} />
                   <div className="card-content1">
@@ -80,15 +84,18 @@ function Projets() {
             </div>
           ))}
         </div>
+
+        {/* Affichage du pop-up si un projet est sélectionné */}
         {selectedProject && (
           <Popup show={showPopup} onClose={closePopup}>
             <h2>{selectedProject.title}</h2>
             <img src={selectedProject.img} alt={selectedProject.alt} />
             <p>{selectedProject.paragraphe}</p>
             <a href={selectedProject.contenu_popup} target="_blank" rel="noopener noreferrer">lien git</a>
-             {/* Afficher le lien du site seulement s'il existe */}
-             {selectedProject.contenu_popup1 && (
-            <a href={selectedProject.contenu_popup1} target="_blank" rel="noopener noreferrer">lien du site</a>
+
+            {/* Afficher le lien du site seulement s'il existe */}
+            {selectedProject.contenu_popup1 && (
+              <a href={selectedProject.contenu_popup1} target="_blank" rel="noopener noreferrer">lien du site</a>
             )}
           </Popup>
         )}
