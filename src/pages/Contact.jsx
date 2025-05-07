@@ -5,10 +5,7 @@ import './contact_style.scss';
 function Contact() {
   return (
     <div id="contact" >
-    {/* <h1 className='titre'>Contact</h1> */}
     <p className='titre'>Vous pouvez me contacter </p>
-      
-    {/* <ContactForm /> */}
     <div className="block-contact">   
       <div className="colonnecontact">
         <div className="icon-contact">

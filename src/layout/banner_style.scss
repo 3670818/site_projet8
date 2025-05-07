@@ -7,6 +7,10 @@
     padding: 20px 0;
     border-bottom: 1px solid #F2F2F2;
     padding-inline: 5%;
+
+    a{
+      text-decoration: none;
+    }
   }
   
   .banner-link {
@@ -42,9 +46,64 @@
     gap: 10px;
     align-items: center;
   }
-  
+  .burger {
+    display: none; // caché par défaut
+    font-size: 2rem;
+    cursor: pointer;
+  }
   .tel {
     margin-left: auto;
     display: flex;
+  }
+  @media (max-width: 768px) {
+    .accueil-link {
+      display: none;
+    }
+    
+  
+  .banner a {
+      margin-right: 0;
+      text-decoration: none;  
+    }
+  
+    .partiedroite {
+      margin-top: 10px;
+    }
+  
+    .tel {
+      margin-left: 0;
+    }
+    .banner {
+     
+    }
+  
+      .burger {
+        display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center; // visible uniquement en petit écran
+      }
+      .banner-link:hover {
+        color: black;
+      }
+      
+      .banner-link.active {
+        color: black;
+        font-size: 25px;
+      }
+  
+      .partiedroite {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: floralwhite;
+        padding: 1rem 0px;
+        border-top: 1px solid #ddd;
+        border-radius: 5px;
+      }
+  
+      .partiedroite.open {
+        display: flex;
+      }
+    
   }
   

@@ -10,12 +10,13 @@
 
 .tableau{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 
 
@@ -164,7 +165,7 @@
     }
     .tableau{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         margin-top: 10px;
@@ -173,5 +174,10 @@
     .apartment__description__area{
         display: flex;
         flex-wrap: wrap;
+    }
+    .telecharger{
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
 }
