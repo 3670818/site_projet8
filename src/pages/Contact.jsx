@@ -10,12 +10,29 @@ function Contact() {
       <div className="colonnecontact">
         <div className="icon-contact">
           <i className="fa-solid fa-envelope"></i>
-          <a href="mailto:ibrahimallae1@gmail.com">ibrahimallae1@gmail.com</a>
+          <a
+          href="#"
+          onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "mailto:" + "ibrahimallae1" + "@" + "gmail.com";
+       }
+      }
+>
+  ibrahimallae1 [at] gmail [dot] com
+</a>
 
       </div>
       <div className="icon-contact">
         <i className="fa-solid fa-phone"></i>
-        <a href="tel:+33651782543">06 51 78 25 43</a>
+        <a
+         href="#"
+        onClick={(e) => {
+        e.preventDefault();
+        window.location.href = "tel:" + "06" + "51782543";
+     }}
+>
+  06 51 78 25 43
+</a>
       </div>
       <div className="icon-contact">
         <i className="fa-brands fa-linkedin-in"></i>
