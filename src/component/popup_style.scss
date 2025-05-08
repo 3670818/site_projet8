@@ -40,8 +40,11 @@
 
 @media (max-width: 768px) {
     .popup{
-        left: 0;
-        top: 110%;
-        
+        position: fixed;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
     }    
 }
